@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #bebebe;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    background-color: #bebebe;
+}
+
+header {
+    height: 70px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 5px 24px;
+    text-decoration: uppercase;
+}
+
+header h1 a {
+    transition: .3s;
+}
+
+header h1 a:hover {
+    color: #038cc2;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a {
+    transition: .3s;
+}
+
+header ul li a:hover {
+    color: #038cc2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(16, 47, 80, .9);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.sidebar ul li a {
+    color: #fff;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: backgroud-color;
+}
+
+.sidebar ul li:hover {
+    background-color: #f84744;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+.banner {
+    background-color: #ffffff;
+    padding: 150px 0;
+}
+
+section {
+    padding: 50px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    box-shadow: 0 px 15px #ddd;
+    margin-bottom: 10px;
+}
+
+.banner h2,
+.banner p,
+.banner span {
+    color: #fff;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 10px;
+}
+
+.banner-center {
+    padding: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+article h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+p {
+    text-align: justify;
+}
+
+article h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60%);
+}
+
+article h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: #414141;
+    left: calc(50% - 60%);
+}
+
+article img {
+    width: 100%;
+}
+
+article .portofolio {
+    width: 25%;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#skills,
+#contact {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+.container p {
+    text-align: justify;
+}
+
+#skills .bar {
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px 0 20px 0;
+}
+
+.bar .nilai {
+    height: 30px;
+    background-color: #00ff4c;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+.borobudur {
+    width: 100%;
+}
+
+.prambanan {
+    width: 100%;
+}
+
+.merapi {
+    width: 100%;
+}
+
+.keraton {
+    width: 100%;
+}
+
+.pantai {
+    width: 100%;
+}
+
+footer .card {
+    background-color: #bebebe;
+    padding: 30px;
+    text-align: center;
+    width: 96%;
+    box-shadow: 0 4px 8px 0;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+footer small {
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
